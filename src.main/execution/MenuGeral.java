@@ -2,9 +2,6 @@ package execution;
 
 import java.util.Scanner;
 
-import calculoDeAtendimentos.CalculoAtendimentoCachorro;
-import calculoDeAtendimentos.CalculoAtendimentoGato;
-import calculoDeAtendimentos.Custos;
 import entidades.Animal;
 import entidades.Cachorro;
 import entidades.Gato;
@@ -12,6 +9,9 @@ import exceptions.CadastroNaoExiste;
 import exceptions.CadastroNaoPermitido;
 import exceptions.TamanhoNaoPermitido;
 import interfaces.CalculoAtendimento;
+import services.calculoDeAtendimentos.CalculoAtendimentoCachorro;
+import services.calculoDeAtendimentos.CalculoAtendimentoGato;
+import services.calculoDeAtendimentos.Custos;
 import sistemaDeCadastros.Cadastro;
 import sistemaDeCadastros.EfetuarCadastro;
 

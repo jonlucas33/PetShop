@@ -3,8 +3,8 @@ package test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import calculoDeAtendimentos.CalculoAtendimentoCachorro;
-import calculoDeAtendimentos.CalculoAtendimentoGato;
+import services.calculoDeAtendimentos.CalculoAtendimentoCachorro;
+import services.calculoDeAtendimentos.CalculoAtendimentoGato;
 
 public class PetShopTests {
 	
@@ -43,7 +43,7 @@ public class PetShopTests {
 	public void test05() {
 		try {
 			calculoCachorro.calculoBanho(3);
-			Assertions.fail("Não trabalhamos com animais desse porte.");
+			Assertions.fail("Nï¿½o trabalhamos com animais desse porte.");
 		}catch(Exception e) {
 			
 		}
@@ -53,7 +53,7 @@ public class PetShopTests {
 	public void test06() {
 		try {
 			calculoCachorro.calculoTosa(-5);
-			Assertions.fail("Não trabalhamos com animais desse porte.");
+			Assertions.fail("Nï¿½o trabalhamos com animais desse porte.");
 		}catch(Exception e) {
 			
 		}
@@ -63,7 +63,7 @@ public class PetShopTests {
 	public void test07() {
 		try {
 			calculoGato.calculoTosa(200);
-			Assertions.fail("Não trabalhamos com animais desse porte.");
+			Assertions.fail("Nï¿½o trabalhamos com animais desse porte.");
 		} catch(Exception e) {
 			
 		}
@@ -73,7 +73,7 @@ public class PetShopTests {
 	public void test08() {
 		try {
 			calculoGato.calculoBanho(0);
-			Assertions.fail("Não trabalhamos com animais desse porte.");
+			Assertions.fail("Nï¿½o trabalhamos com animais desse porte.");
 		} catch(Exception e) {
 			
 		}

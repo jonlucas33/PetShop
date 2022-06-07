@@ -2,12 +2,12 @@ package execution;
 
 import java.util.Scanner;
 
-import calculoDeAtendimentos.Custos;
 import entidades.Animal;
 import exceptions.CadastroNaoExiste;
 import exceptions.CadastroNaoPermitido;
 import exceptions.TamanhoNaoPermitido;
 import interfaces.CalculoAtendimento;
+import services.calculoDeAtendimentos.Custos;
 import sistemaDeCadastros.Cadastro;
 
 public class Execucao {

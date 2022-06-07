@@ -1,4 +1,4 @@
-package calculoDeAtendimentos;
+package services.calculoDeAtendimentos;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class Custos {
 	double tamanho;
 
 	public void calcularBanho(Animal animal, CalculoAtendimento calculoAtendimento,Cadastro c) throws TamanhoNaoPermitido, CadastroNaoExiste {
-		System.out.println("Digite o número do cadastro");
+		System.out.println("Digite o nï¿½mero do cadastro");
 		numeroDaConta = scan.nextInt();
 		if(c==null) {
 			throw new CadastroNaoExiste();
@@ -35,12 +35,12 @@ public class Custos {
 			throw new TamanhoNaoPermitido();
 		}
 		double valor = calculoAtendimento.calculoBanho(tamanho);
-		System.out.println("O valor do banho é "+valor+" reais.");
+		System.out.println("O valor do banho ï¿½ "+valor+" reais.");
 		
 	}
 
 	public void calcularTosa(Animal animal, CalculoAtendimento calculoAtendimento,Cadastro c) throws TamanhoNaoPermitido, CadastroNaoExiste {
-		System.out.println("Digite o número do cadastro");
+		System.out.println("Digite o nï¿½mero do cadastro");
 		numeroDaConta = scan.nextInt();
 		if(!verificaCadastro.validaCadastro(numeroDaConta,c)) {
 			throw new CadastroNaoExiste();
@@ -52,7 +52,7 @@ public class Custos {
 			throw new TamanhoNaoPermitido();
 		}
 		double valor = calculoAtendimento.calculoTosa(tamanho);
-		System.out.println("O valor da tosa é "+valor+" reais.");
+		System.out.println("O valor da tosa ï¿½ "+valor+" reais.");
 		
 	}
 }

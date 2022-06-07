@@ -2,10 +2,9 @@ package execution;
 
 import java.util.Scanner;
 
-import calculoAdministrativos.CachorrosAtendidos;
-import calculoAdministrativos.GatosAtendidos;
-import calculoAdministrativos.TotalValorAtendimentos;
-import calculoAdministrativos.totalAtendimentos;
+import services.calculoAdministrativos.CachorrosAtendidos;
+import services.calculoAdministrativos.GatosAtendidos;
+import services.calculoAdministrativos.TotalValorAtendimentos;
 
 public class MenuAdministrativo {
 
@@ -13,10 +12,8 @@ public class MenuAdministrativo {
     int escolha;
 
     public void menuAdministrativo() {
-        TotalValorAtendimentos totalValorAtendimentos = new TotalValorAtendimentos();
         CachorrosAtendidos c = new CachorrosAtendidos();
         GatosAtendidos g = new GatosAtendidos();
-        totalAtendimentos t = new totalAtendimentos();
         do {
             System.out.println("BEM VINDO AO MENU ADMINISTRATIVO !!!");
             System.out.println();
@@ -24,19 +21,15 @@ public class MenuAdministrativo {
             System.out.println("Digite 1 - Total do valor dos atendimentos.");
             System.out.println("Digite 2 - Quantos cachorros marcaram atendimentos.");
             System.out.println("Digite 3 - Quantos gatos marcaram atendimentos.");
-            System.out.println("Digite 4 - Quantos banhos e tosas.");
             switch (escolha) {
                 case 1:
-                    totalValorAtendimentos.balancoDiario();
+                    TotalValorAtendimentos.getBalancoDiario();
                     break;
                 case 2:
-                    c.balancoDiario();
+                    c.getBalancoDiario();
                     break;
                 case 3:
-                    g.balancoDiario();
-                    break;
-                case 4:
-                    t.balancoDiario();
+                    g.getBalancoDiario();
                     break;
                 case 0:
                     System.out.println("Programa encerrado. Volte sempre.");
