@@ -2,12 +2,21 @@ package execution;
 
 import java.util.Scanner;
 
+import calculoAdministrativos.CachorrosAtendidos;
+import calculoAdministrativos.GatosAtendidos;
+import calculoAdministrativos.TotalValorAtendimentos;
+import calculoAdministrativos.totalAtendimentos;
+
 public class MenuAdministrativo {
 
     static Scanner s = new Scanner(System.in);
     int escolha;
 
     public void menuAdministrativo() {
+        TotalValorAtendimentos totalValorAtendimentos = new TotalValorAtendimentos();
+        CachorrosAtendidos c = new CachorrosAtendidos();
+        GatosAtendidos g = new GatosAtendidos();
+        totalAtendimentos t = new totalAtendimentos();
         do {
             System.out.println("BEM VINDO AO MENU ADMINISTRATIVO !!!");
             System.out.println();
@@ -18,19 +27,17 @@ public class MenuAdministrativo {
             System.out.println("Digite 4 - Quantos banhos e tosas.");
             switch (escolha) {
                 case 1:
-
+                    totalValorAtendimentos.balancoDiario();
                     break;
                 case 2:
-
+                    c.balancoDiario();
                     break;
                 case 3:
-
+                    g.balancoDiario();
                     break;
-
                 case 4:
-
+                    t.balancoDiario();
                     break;
-
                 case 0:
                     System.out.println("Programa encerrado. Volte sempre.");
                     break;
