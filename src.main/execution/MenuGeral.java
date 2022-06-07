@@ -22,11 +22,11 @@ public class MenuGeral {
 	double peso;
 	String nome;
 	Cadastro cadastro;
-	MenuAdministrativo menuAdministrativo;
 
 	public void menuAnimal() throws Exception {
 		EfetuarCadastro efetuarCadastro = EfetuarCadastro.getInstance();
 		do {
+			MenuAdministrativo menuAdministrativo = new MenuAdministrativo();
 			System.out.println("BEM VINDO AO NOSSO PET SHOP !!!");
 			System.out.println();
 			System.out.println("Digite 0 - Encerrar o programa");
