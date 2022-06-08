@@ -1,5 +1,9 @@
 
+import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import calculoDeAtendimentos.CalculoAtendimentoCachorro;
@@ -39,24 +43,6 @@ public class PetShopTests {
 	public void test04() {
 		double actual = calculoGato.calculoTosa(15);
 		double expected = 30;
-		Assertions.assertEquals(expected, actual);
-	}
-
-	@Test
-	public void test05() {
-		double x = calculoGato.calculoTosa(15);
-		x = calculoGato.calculoBanho(20);
-		double actual = g.getBalancoDiario();
-		double expected = 60;
-		Assertions.assertEquals(expected, actual);
-	}
-
-	@Test
-	public void test06() {
-		double x = calculoCachorro.calculoTosa(20);
-		x = calculoCachorro.calculoBanho(40);
-		double actual = c.getBalancoDiario();
-		double expected = 68;
 		Assertions.assertEquals(expected, actual);
 	}
 
