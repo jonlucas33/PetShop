@@ -1,4 +1,4 @@
-package services.calculoAdministrativos;
+package calculoAdministrativos;
 
 public class Administracao {
 

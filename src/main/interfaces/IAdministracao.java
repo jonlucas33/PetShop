@@ -1,8 +1,7 @@
 package interfaces;
 
+@FunctionalInterface
 public interface IAdministracao {
-
+    
     double getBalancoDiario();
-    void addBalancoDiario(double balancoDiario);
-
 }

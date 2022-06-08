@@ -5,8 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
   <description>Projeto final de Programação III</description>
   <build>
-    <sourceDirectory>src.main</sourceDirectory>
-    <testSourceDirectory>src.test</testSourceDirectory>
+    <sourceDirectory>src/main</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

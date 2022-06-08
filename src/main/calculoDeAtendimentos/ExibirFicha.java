@@ -1,4 +1,4 @@
-package services.calculoDeAtendimentos;
+package calculoDeAtendimentos;
 
 import java.util.Scanner;
 import entidades.Animal;

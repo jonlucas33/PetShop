@@ -7,7 +7,7 @@ import exceptions.CadastroNaoExiste;
 import exceptions.CadastroNaoPermitido;
 import exceptions.TamanhoNaoPermitido;
 import interfaces.CalculoAtendimento;
-import services.calculoDeAtendimentos.Custos;
+import calculoDeAtendimentos.Custos;
 import sistemaDeCadastros.Cadastro;
 
 public class Execucao {	

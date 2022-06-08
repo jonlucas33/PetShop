@@ -34,8 +34,8 @@ public class VerificacaoDeCadastros {
 		return cadastro;
 	}
 
-	public boolean validaCadastro(int numero, Cadastro c) {
-			if(numero==c.getNumero()) {
+	public boolean validaCadastro(int numero, Cadastro cadastro) {
+			if(numero==cadastro.getNumero()) {
 				return true;
 			}
 		return false;

@@ -1,16 +1,19 @@
-package test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import services.calculoDeAtendimentos.CalculoAtendimentoCachorro;
-import services.calculoDeAtendimentos.CalculoAtendimentoGato;
+import calculoDeAtendimentos.CalculoAtendimentoCachorro;
+import calculoDeAtendimentos.CalculoAtendimentoGato;
+import calculoAdministrativos.CachorrosAtendidos;
+import calculoAdministrativos.GatosAtendidos;
 
 public class PetShopTests {
 	
 	private CalculoAtendimentoCachorro calculoCachorro = new CalculoAtendimentoCachorro();
 	private CalculoAtendimentoGato calculoGato = new CalculoAtendimentoGato();
-	
+	private CachorrosAtendidos c = new CachorrosAtendidos();
+	private GatosAtendidos g = new GatosAtendidos();
+
 	@Test
 	public void test01() {
 		double actual = calculoCachorro.calculoBanho(30);
@@ -38,44 +41,23 @@ public class PetShopTests {
 		double expected = 30;
 		Assertions.assertEquals(expected, actual);
 	}
-	
-	/*@Test
+
+	@Test
 	public void test05() {
-		try {
-			calculoCachorro.calculoBanho(3);
-			Assertions.fail("N�o trabalhamos com animais desse porte.");
-		}catch(Exception e) {
-			
-		}
+		double x = calculoGato.calculoTosa(15);
+		x = calculoGato.calculoBanho(20);
+		double actual = g.getBalancoDiario();
+		double expected = 60;
+		Assertions.assertEquals(expected, actual);
 	}
-	
+
 	@Test
 	public void test06() {
-		try {
-			calculoCachorro.calculoTosa(-5);
-			Assertions.fail("N�o trabalhamos com animais desse porte.");
-		}catch(Exception e) {
-			
-		}
+		double x = calculoCachorro.calculoTosa(20);
+		x = calculoCachorro.calculoBanho(40);
+		double actual = c.getBalancoDiario();
+		double expected = 68;
+		Assertions.assertEquals(expected, actual);
 	}
-	
-	@Test
-	public void test07() {
-		try {
-			calculoGato.calculoTosa(200);
-			Assertions.fail("N�o trabalhamos com animais desse porte.");
-		} catch(Exception e) {
-			
-		}
-	}
-	
-	@Test
-	public void test08() {
-		try {
-			calculoGato.calculoBanho(0);
-			Assertions.fail("N�o trabalhamos com animais desse porte.");
-		} catch(Exception e) {
-			
-		}
-	}*/
+
 }

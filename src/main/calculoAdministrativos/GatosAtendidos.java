@@ -1,14 +1,13 @@
-package services.calculoAdministrativos;
+package calculoAdministrativos;
 
 import interfaces.IAdministracao;
 
 public class GatosAtendidos implements IAdministracao {
 
-    double balancoDiario=0;
+    static double balancoDiario=0;
 
-    @Override
-    public void addBalancoDiario(double balancoDiario) {
-        this.balancoDiario += balancoDiario;
+    public static void addBalancoDiario(double balancoDia) {
+        balancoDiario += balancoDia;
         TotalValorAtendimentos.addBalancoDiario(balancoDiario);
     }
 

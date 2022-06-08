@@ -9,9 +9,9 @@ import exceptions.CadastroNaoExiste;
 import exceptions.CadastroNaoPermitido;
 import exceptions.TamanhoNaoPermitido;
 import interfaces.CalculoAtendimento;
-import services.calculoDeAtendimentos.CalculoAtendimentoCachorro;
-import services.calculoDeAtendimentos.CalculoAtendimentoGato;
-import services.calculoDeAtendimentos.Custos;
+import calculoDeAtendimentos.CalculoAtendimentoCachorro;
+import calculoDeAtendimentos.CalculoAtendimentoGato;
+import calculoDeAtendimentos.Custos;
 import sistemaDeCadastros.Cadastro;
 import sistemaDeCadastros.EfetuarCadastro;
 
