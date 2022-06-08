@@ -23,7 +23,7 @@ public class ExibirFicha {
 		animal.setPeso(peso);
 		animal.setIdade(idade);
 		
-		Ficha.exibicaoDeFicha.test(animal);
+		Ficha.exibicaoDeFicha.exibir(animal);
 	}
 	
 }

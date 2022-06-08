@@ -10,5 +10,5 @@ public interface Ficha {
 		 System.out.println("IDADE: "+animal.getIdade()+" anos");
 		 System.out.println("PESO: "+animal.getPeso()+" kg");
 	};
-	void test(Animal animal);
+	void exibir(Animal animal);
 }

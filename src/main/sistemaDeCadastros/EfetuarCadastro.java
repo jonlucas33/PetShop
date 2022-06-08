@@ -21,20 +21,20 @@ public class EfetuarCadastro {
 	private VerificacaoDeCadastros verificaCadastro = new VerificacaoDeCadastros();
 	static Scanner scan = new Scanner(System.in);
 	
-	Cadastro c;
+	Cadastro cadastro;
 	int numeroDaConta;
 	boolean resultado;
 	double tamanho;
 	
 	public Cadastro realizarCadastro() throws CadastroNaoPermitido, CadastroNaoExiste {
-		System.out.println("Digite o número do cadastro:");
+		System.out.println("Digite o nï¿½mero do cadastro:");
 		numeroDaConta = scan.nextInt();
 		resultado=verificaCadastro.criarCadastro(numeroDaConta);
 		if(resultado==false) {
 			throw new CadastroNaoPermitido();
 		}
-		c=verificaCadastro.armazenaCadastro(numeroDaConta);
+		cadastro=verificaCadastro.armazenaCadastro(numeroDaConta);
 		System.out.println("O cadastro foi realizado: "+resultado);
-		return c;
+		return cadastro;
 	}
 }
