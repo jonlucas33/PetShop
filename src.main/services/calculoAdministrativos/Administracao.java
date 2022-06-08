@@ -1,8 +1,4 @@
-package services;
-
-import services.calculoAdministrativos.CachorrosAtendidos;
-import services.calculoAdministrativos.GatosAtendidos;
-import services.calculoAdministrativos.TotalValorAtendimentos;
+package services.calculoAdministrativos;
 
 public class Administracao {
 

@@ -5,6 +5,7 @@ import java.util.Scanner;
 import services.calculoAdministrativos.CachorrosAtendidos;
 import services.calculoAdministrativos.GatosAtendidos;
 import services.calculoAdministrativos.TotalValorAtendimentos;
+//import services.calculoDeAtendimentos.Custos;
 
 public class MenuAdministrativo {
 
@@ -12,24 +13,29 @@ public class MenuAdministrativo {
     int escolha;
 
     public void menuAdministrativo() {
-        CachorrosAtendidos c = new CachorrosAtendidos();
-        GatosAtendidos g = new GatosAtendidos();
+
+        CachorrosAtendidos cachorrosAtendidos = new CachorrosAtendidos();
+        GatosAtendidos gatosAtendidos = new GatosAtendidos();
+        //Custos custos = new Custos();
+
         do {
             System.out.println("BEM VINDO AO MENU ADMINISTRATIVO !!!");
             System.out.println();
             System.out.println("Digite 0 - Encerrar o programa");
             System.out.println("Digite 1 - Total do valor dos atendimentos.");
-            System.out.println("Digite 2 - Quantos cachorros marcaram atendimentos.");
-            System.out.println("Digite 3 - Quantos gatos marcaram atendimentos.");
+            System.out.println("Digite 2 - Valor de atendimentos de cachorro.");
+            System.out.println("Digite 3 - Valor de atendimentos de gato.");
+            escolha = s.nextInt();
             switch (escolha) {
                 case 1:
                     TotalValorAtendimentos.getBalancoDiario();
                     break;
                 case 2:
-                    c.getBalancoDiario();
+               // cachorrosAtendidos.addBalancoDiario(custos.getBalancoDiario());
+                cachorrosAtendidos.getBalancoDiario();
                     break;
                 case 3:
-                    g.getBalancoDiario();
+                gatosAtendidos.getBalancoDiario();
                     break;
                 case 0:
                     System.out.println("Programa encerrado. Volte sempre.");

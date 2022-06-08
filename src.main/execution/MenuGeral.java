@@ -70,7 +70,7 @@ public class MenuGeral {
 	}
 
 	public void getMenu(Animal animal, CalculoAtendimento calculoAtendimento, Cadastro c)
-			throws TamanhoNaoPermitido, CadastroNaoExiste {
+			throws Exception {
 		do {
 			Custos custos = new Custos();
 			System.out.println("VAMOS CUIDAR DO SEU PET !!!");
@@ -100,6 +100,7 @@ public class MenuGeral {
 					break;
 				case 0:
 					System.out.println("Programa encerrado.");
+					menuAnimal();
 					break;
 				default:
 					System.out.println("Opção inválida. Digite um dos números do menu.");

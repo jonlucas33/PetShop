@@ -10,8 +10,7 @@ import interfaces.CalculoAtendimento;
 import services.calculoDeAtendimentos.Custos;
 import sistemaDeCadastros.Cadastro;
 
-public class Execucao {
-	
+public class Execucao {	
 	static Scanner scan = new Scanner(System.in);
 	int escolha;
 	public static void main(String[] args) throws Exception {

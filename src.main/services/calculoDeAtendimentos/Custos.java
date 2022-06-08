@@ -13,6 +13,7 @@ public class Custos {
 	
 	private VerificacaoDeCadastros verificaCadastro = new VerificacaoDeCadastros();
 	private ExibirFicha exibirFicha = new ExibirFicha();
+	//private double v;
 	static Scanner scan = new Scanner(System.in);
 	
 	int numeroDaConta;
@@ -52,7 +53,16 @@ public class Custos {
 			throw new TamanhoNaoPermitido();
 		}
 		double valor = calculoAtendimento.calculoTosa(tamanho);
+		//addBalancoDiario(valor);
 		System.out.println("O valor da tosa � "+valor+" reais.");
 		
 	}
+
+	/*public void addBalancoDiario(double valor) {
+        this.v += valor;
+    }
+
+    public double getBalancoDiario() {
+        return v;
+     }*/
 }
