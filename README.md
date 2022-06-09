@@ -41,7 +41,7 @@ public void getMenu(Animal animal,CalculoAtendimento calculoAtendimento,Cadastro
 			System.out.println("Digite 1 - Marcar o banho.");
 			System.out.println("Digite 2 - Marcar a Tosa.");
 			escolha=scan.nextInt();
-~
+~~~
 
 
 - Escolhida a opção, uma ficha será liberada para ser preenchida, solicitando que o cliente forneca os dados(Atributos) do animal, como seu peso e a idade. Para que a consulta do banco de dados seja mais rápida na próxima ida ao estabelecimento, facilitando também o trabalho dos funcionários.  
@@ -60,6 +60,6 @@ public void exibicaoDeFicha(Animal animal) {
 		
 		Ficha.exibicaoDeFicha.exibir(animal);
 	}
-~
+~~~
 
 - E depois de todo processo de entrada de dados, será retornado a ficha do pet com o valor do atendimento solicitado, de acordo com os dados que foram repassados.
