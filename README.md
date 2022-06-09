@@ -26,7 +26,7 @@ public Cadastro[] cadastros;
 	}
   
   
-~
+~~~
 
 - Após a realização do cadastro, o cliente poderar selecionar qual tipo de serviço gostaria para seu animal. Ex: Marcar banho ou tosa? E claro, só é possivel chegar nesta opção se o solicitador do serviço obter êxito na conclusão do cadastro. Do contrário, a ação não poderá ser concluída e uma mensagem de que existe algum erro no cadastro será exibido ou por não existir o cadastro ou por alguma informação inserida incorretamente. 
 
